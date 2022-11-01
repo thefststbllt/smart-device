@@ -1,0 +1,87 @@
+.main-info {
+  &__container {
+    padding-top: 305px;
+    padding-left: 130px;
+    padding-bottom: 280px;
+
+    @include vp-1023 {
+      padding: 180px 50px 206px;
+    }
+
+    @include vp-767 {
+      padding-top: 150px;
+      padding-bottom: 188px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.2em;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 0;
+
+    @include vp-1023 {
+      font-size: 64px;
+      line-height: 1.2em;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 7px;
+    }
+  }
+
+  &__description {
+    font-size: 22px;
+    line-height: 155%;
+    width: 60%;
+    margin: 30px auto 47px 0;
+    text-transform: lowercase;
+
+    @include vp-1023 {
+      width: auto;
+      margin: 0 0 57px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 1.6em;
+      margin: 0 0 44px;
+    }
+  }
+
+  &__button {
+    @include vp-1023 {
+      margin-left: 45px;
+    }
+
+    @include vp-767 {
+      margin: 0;
+    }
+  }
+
+  &__button-text {
+    &--mobile {
+      display: none;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 1.1em;
+
+      &--not-mobile {
+        display: none;
+      }
+
+      &--mobile {
+        display: inline-block;
+      }
+    }
+  }
+}

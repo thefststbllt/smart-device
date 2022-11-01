@@ -1,0 +1,220 @@
+.products {
+  background-color: #041827;
+
+  &__container {
+    padding-top: 64px;
+    padding-bottom: 140px;
+
+    @include vp-1023 {
+      padding-top: 55px;
+      padding-bottom: 75px;
+    }
+
+    @include vp-767 {
+      padding-top: 47px;
+      padding-bottom: 86px;
+    }
+  }
+
+  &__header {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    font-size: 0;
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 1.4em;
+    }
+  }
+
+  &__description {
+    font-size: 36px;
+    line-height: 1.4em;
+    margin: 0 0 54px;
+    color: #f2f5f7;
+    font-family: "Roboto Condensed";
+
+    @include vp-1023 {
+      margin: 0 0 38px;
+    }
+
+    @include vp-767 {
+      font-size: 28px;
+      line-height: 1.4em;
+      margin: 0 0 30px;
+    }
+  }
+
+  &__spare-mobile {
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 85px;
+    padding: 0;
+    margin: 0;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+
+    &--first {
+      background-image: url("../img/card-product-first.webp");
+    }
+
+    &--second {
+      background-image: url("../img/card-product-second.webp");
+    }
+
+    &--third {
+      background-image: url("../img/card-product-third.webp");
+    }
+
+    @include vp-1023 {
+      &--first,
+      &--second,
+      &--third {
+        box-shadow: (inset 100em 100em 100em 100em rgb(4, 24, 39, 0.5));
+        background-image: url("../img/background-cards.webp");
+        height: 250px;
+        background-size: 250% 380%;
+      }
+
+      &--first {
+        background-position: bottom 13% left 34%;
+      }
+
+      &--second {
+        background-position: bottom -316px right -252px;
+      }
+
+      &--third {
+        background-position: bottom 40% left 21%;
+      }
+    }
+
+    @include vp-767 {
+      &--first,
+      &--second,
+      &--third {
+        background-size: 575% 410%;
+      }
+
+      &--first {
+        background-position: bottom 48% left 31%;
+      }
+
+      &--second {
+        background-position: bottom 17% right 70%;
+      }
+
+      &--third {
+        background-position: bottom 35% right 28%;
+      }
+    }
+  }
+
+  &__item-header {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 0;
+    color: #ffffff;
+    width: 60%;
+
+    &::before,
+    &::after {
+      z-index: 1;
+      content: "";
+      display: block;
+      background-color: #ffffff;
+      width: 6px;
+      height: 1px;
+      position: absolute;
+      right: 25px;
+    }
+
+    &::before {
+      bottom: 30px;
+      transform: rotate(45deg);
+      border-radius: 0 1px 0 0;
+    }
+
+    &::after {
+      bottom: 26px;
+      transform: rotate(-45deg);
+      border-radius: 0 0 1px 0;
+    }
+
+    @include vp-1023 {
+      width: 55%;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      width: 64%;
+
+      &::before,
+      &::after {
+        right: 16px;
+        width: 5px;
+        height: 1px;
+      }
+
+      &::before {
+        bottom: 22px;
+      }
+
+      &::after {
+        bottom: 19px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    padding: 47px 40px;
+    position: relative;
+
+    @include vp-1023 {
+      padding: 37px 45px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 3px 0 0 0;
+      background-color: #00b2ff;
+      position: absolute;
+      bottom: 0;
+      right: 1px;
+    }
+
+    @include vp-767 {
+      padding: 30px;
+
+      &::after {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
