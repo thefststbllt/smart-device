@@ -8,10 +8,10 @@ let modals;
 //   context._setSettings('default');
 //   modals.open(name);
 // };
-
+//
 // closeCallback() {
 //   openModalInCloseCallback('modal-5');
-// },
+// }
 
 const settings = {
   'default': {

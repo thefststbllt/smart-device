@@ -68,10 +68,15 @@
   }
 }
 
-@mixin vp-374 {
-  @media (max-width: ($vp-375 - 1px)) {
+@mixin vp-319 {
+  @media (max-width: ($vp-320 - 1px)) {
     @content;
   }
+}
+
+@mixin no-spare-gap { // убрать!!!
+  padding: 0;
+  margin: 0;
 }
 
 // Mobile first
