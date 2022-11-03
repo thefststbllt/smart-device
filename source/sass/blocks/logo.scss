@@ -9,29 +9,29 @@
   @include vp-767 {
     margin-top: 5px;
   }
-}
 
-.logo picture {
-  width: max-content;
-}
-
-.logo p {
-  display: flex;
-  flex-direction: column;
-  margin: 5px 0 0 15px;
-
-  @include vp-767 {
-    font-size: 0;
+  & picture {
+    width: max-content;
   }
-}
 
-.logo span {
-  font-family: "Roboto";
-  font-size: 12px;
-  line-height: 1.1em;
-  color: rgba(255, 255, 255, 0.7);
+  & p {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 0 15px;
 
-  @include vp-767 {
-    font-size: 0;
+    @include vp-767 {
+      font-size: 0;
+    }
+  }
+
+  & span {
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 1.1em;
+    color: rgba(255, 255, 255, 0.7);
+
+    @include vp-767 {
+      font-size: 0;
+    }
   }
 }

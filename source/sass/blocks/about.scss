@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: 150px 320px;
 
-    @media (min-resolution: 2dppx) {
+    @media (min-resolution: $retina-dppx) {
       background-image: url("/img/about-year@2x.webp");
     }
 
@@ -37,10 +37,6 @@
     line-height: 22px;
     margin: 0;
 
-    &:nth-child(2) {
-      display: inline;
-    }
-
     @include vp-1023 {
       line-height: 1.35em;
     }
@@ -58,10 +54,10 @@
       margin-top: 14px;
     }
   }
-}
 
-.about .about__container {
-  @media (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: none;
+  & &__container {
+    @media (min-resolution: $retina-dppx) and (max-width: 767px) {
+      background-image: none;
+    }
   }
 }

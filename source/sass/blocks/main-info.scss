@@ -67,7 +67,7 @@
   }
 
   &__button-text {
-    &--mobile {
+    &--chargeless-consultation {
       display: none;
     }
 
@@ -75,11 +75,11 @@
       font-size: 14px;
       line-height: 1.1em;
 
-      &--not-mobile {
+      &--acquire-consultation {
         display: none;
       }
 
-      &--mobile {
+      &--chargeless-consultation {
         display: inline-block;
       }
     }
