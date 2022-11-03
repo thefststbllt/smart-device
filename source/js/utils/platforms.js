@@ -1,3 +1,7 @@
+const MAX_DEVICE_WIDTH = {
+  mobile: 767,
+};
+
 const PLATFORMS = [
   'iPad Simulator',
   'iPhone Simulator',
@@ -7,4 +11,4 @@ const PLATFORMS = [
   'iPod'
 ];
 
-export {PLATFORMS};
+export {PLATFORMS, MAX_DEVICE_WIDTH};
