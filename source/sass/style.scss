@@ -1,11 +1,7 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
 
 // Global
-// ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -14,8 +10,6 @@
 @import "global/container";
 
 // Blocks
-// ---------------------------------
-
 @import "blocks/modal";
 @import "blocks/main-header";
 @import "blocks/main-navigation";
