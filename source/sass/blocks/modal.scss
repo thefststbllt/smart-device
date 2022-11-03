@@ -114,76 +114,77 @@
 
     pointer-events: auto;
   }
-}
 
-.modal form {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-}
 
-.modal input,
-.modal textarea {
-  width: 100%;
-  border: none;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-  padding: 15px;
-  color: #ffffff;
+  & form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 
-  &::placeholder {
+  & input,
+  & textarea {
+    width: 100%;
+    border: none;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+    padding: 15px;
     color: #ffffff;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+
+    &:focus {
+      outline: 2px solid #4169e1;
+    }
   }
 
-  &:focus {
-    outline: 2px solid #4169e1;
+  & button {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    background-color: #041427;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
-}
 
-.modal button {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  background-color: #041427;
-  color: #ffffff;
-  border: none;
-  padding: 15px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.modal .modal__close-btn {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  z-index: 1;
-
-  width: 40px;
-  height: 40px;
-  padding: 0;
-
-  background: transparent;
-  border: none;
-  cursor: pointer;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 1px;
-    border-radius: 1px;
-    background-color: #ffffff;
+  & &__close-btn {
     position: absolute;
-    top: calc(50% - 1px);
-    left: calc(50% - 14px);
-  }
+    top: 22px;
+    right: 22px;
+    z-index: 1;
 
-  &::before {
-    transform: rotate(45deg);
-  }
+    width: 40px;
+    height: 40px;
+    padding: 0;
 
-  &::after {
-    transform: rotate(-45deg);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+      border-radius: 1px;
+      background-color: #ffffff;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(50% - 14px);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }

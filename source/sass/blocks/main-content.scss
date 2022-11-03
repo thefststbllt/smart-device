@@ -20,11 +20,11 @@
       padding: 50px 0;
     }
   }
-}
 
-.main-content .main-content__feedback {
-  @media (min-resolution: 2dppx) and (max-width: 1023px) {
-    background-image: none;
-    background-color: #00b2ff;
+  & &__feedback {
+    @media (min-resolution: $retina-dppx) and (max-width: 1023px) {
+      background-image: none;
+      background-color: #00b2ff;
+    }
   }
 }

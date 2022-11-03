@@ -127,7 +127,7 @@
   }
 
   &__element ul {
-    @include no-spare-gap;
+    padding: 0;
     list-style: none;
     margin: 24px 0 0;
 

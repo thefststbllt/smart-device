@@ -5,7 +5,7 @@
   background: url("../img/airplane.webp") 350px 246px/510px 285px no-repeat, linear-gradient(139deg, #026593, #026593 33.5%, #00b3ff 33%, #00b3ff 100%) no-repeat;
   background-size: 510px 285px, cover;
 
-  @media (min-resolution: 2dppx) {
+  @media (min-resolution: $retina-dppx) {
     background: url("../img/airplane@2x.webp") 350px 246px/510px 285px no-repeat, linear-gradient(139deg, #026593, #026593 33.5%, #00b3ff 33%, #00b3ff 100%) no-repeat;
   }
 
@@ -79,90 +79,90 @@
       margin: 5px 0 0 5px;
     }
   }
-}
 
-.feedback form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 20px;
-  width: 580px;
+  & form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 580px;
 
-  @include vp-1023 {
+    @include vp-1023 {
+      width: 100%;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  & label {
     width: 100%;
   }
 
-  @include vp-767 {
-    grid-template-columns: 1fr;
+  & &__textfield {
+    grid-column: 1/3;
+
+    @include vp-767 {
+      grid-column: 1/2;
+    }
   }
-}
 
-.feedback label {
-  width: 100%;
-}
-
-.feedback .feedback__textfield {
-  grid-column: 1/3;
-
-  @include vp-767 {
-    grid-column: 1/2;
-  }
-}
-
-.feedback input {
-  color: #ffffff;
-  width: 100%;
-  display: block;
-  border: none;
-  padding: 15px;
-  background: rgba(4, 20, 39, 0.15);
-  border-radius: 3px;
-
-  &::placeholder {
+  & input {
     color: #ffffff;
-  }
-}
-
-.feedback textarea {
-  color: #ffffff;
-  width: 100%;
-  background: rgba(4, 20, 39, 0.15);
-  border: none;
-  border-radius: 3px;
-  padding: 25px 15px;
-
-  &::placeholder {
-    color: #ffffff;
-  }
-
-  @include vp-1023 {
-    padding: 33px 15px 13px;
-  }
-
-  @include vp-767 {
-    padding: 27px 15px 45px;
-  }
-}
-
-.feedback button {
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 15px 25px;
-  color: #ffffff;
-  background-color: #041427;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-
-  @include vp-1023 {
-    width: 83%;
-    margin-top: 6px;
-  }
-
-  @include vp-767 {
-    padding: 15px 25px 11px;
     width: 100%;
+    display: block;
+    border: none;
+    padding: 15px;
+    background: rgba(4, 20, 39, 0.15);
+    border-radius: 3px;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+
+  & textarea {
+    color: #ffffff;
+    width: 100%;
+    background: rgba(4, 20, 39, 0.15);
+    border: none;
+    border-radius: 3px;
+    padding: 25px 15px;
+
+    &::placeholder {
+      color: #ffffff;
+    }
+
+    @include vp-1023 {
+      padding: 33px 15px 13px;
+    }
+
+    @include vp-767 {
+      padding: 27px 15px 45px;
+    }
+  }
+
+  & button {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 15px 25px;
+    color: #ffffff;
+    background-color: #041427;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    @include vp-1023 {
+      width: 83%;
+      margin-top: 6px;
+    }
+
+    @include vp-767 {
+      padding: 15px 25px 11px;
+      width: 100%;
+    }
   }
 }

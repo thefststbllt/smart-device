@@ -389,8 +389,8 @@ template {
   font-weight: 400;
   font-style: normal;
   src: local("PT Mono"), url("../fonts/ptmono-regular.woff2") format("woff2");
-  src: local("Blogger Sans"), url("../fonts/ptmono-regular.woff") format("woff");
-  font-display: swap;
+  src: local("PT Mono"), url("../fonts/ptmono-regular.woff") format("woff");
+  font-display: auto;
 }
 
 @font-face {
@@ -399,7 +399,7 @@ template {
   font-style: normal;
   src: local("Roboto"), url("../fonts/roboto-medium.woff2") format("woff2");
   src: local("Roboto"), url("../fonts/roboto-medium.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -408,7 +408,7 @@ template {
   font-style: normal;
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-regular.woff2") format("woff2");
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-regular.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -417,7 +417,7 @@ template {
   font-style: normal;
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-bold.woff2") format("woff2");
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-bold.woff") format("woff");
-  font-display: swap;
+  font-display: auto;
 }
 
 *,
@@ -940,7 +940,7 @@ button,
   text-transform: lowercase;
 }
 
-.main-info__button-text--mobile {
+.main-info__button-text--chargeless-consultation {
   display: none;
 }
 
@@ -1006,10 +1006,6 @@ button,
 .about__container p {
   line-height: 22px;
   margin: 0;
-}
-
-.about__container p:nth-child(2) {
-  display: inline;
 }
 
 .about__container .button {
@@ -1440,8 +1436,8 @@ button,
 }
 
 .footer-socials {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1521,7 +1517,6 @@ button,
 
 .main-footer__element ul {
   padding: 0;
-  margin: 0;
   list-style: none;
   margin: 24px 0 0;
 }
@@ -1574,47 +1569,6 @@ button,
 .main-footer__element-toggle {
   display: none;
 }
-
-/* @mixin hover-focus {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*  @include hover-focus {
-      opacity: 0.8;
-    }
-*/
-
-/*@mixin hover {
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        @content;
-      }
-    }
-  }
-*/
-
-/*@mixin focus {
-    &.focus-visible:focus {
-      @content;
-    }
-  }
-*/
-
-/*@mixin active {
-    &.focus-visible:active {
-      @content;
-    }
-  }
-*/
 
 @media (max-width: 1919px) {
   .main-content__about {
@@ -1846,7 +1800,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1023px), (min-resolution: 2dppx) and (max-width: 1023px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
   .main-content .main-content__feedback {
     background-image: none;
     background-color: #00b2ff;
@@ -1921,11 +1875,11 @@ button,
     line-height: 1.1em;
   }
 
-  .main-info__button-text--not-mobile {
+  .main-info__button-text--acquire-consultation {
     display: none;
   }
 
-  .main-info__button-text--mobile {
+  .main-info__button-text--chargeless-consultation {
     display: inline-block;
   }
 
@@ -2240,7 +2194,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .about .about__container {
     background-image: none;
   }
@@ -2252,7 +2206,7 @@ button,
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .about__container {
     background-image: url("/img/about-year@2x.webp");
   }
