@@ -1,12 +1,12 @@
 .about {
   &__container {
     padding: 0 0 30px 250px;
-    background-image: url("/img/about-year.webp");
+    background-image: url("../img/about-year.webp");
     background-repeat: no-repeat;
     background-size: 150px 320px;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/about-year@2x.webp");
+      background-image: url("../img/about-year@2x.webp");
     }
 
     @include vp-1023 {

@@ -841,9 +841,9 @@ button,
 }
 
 .main-header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("/img/background-main-block.webp") no-repeat;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-main-block.webp") no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("/img/background-main-block.webp") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-main-block.webp") no-repeat;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-main-block.webp") no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-main-block.webp") no-repeat;
   background-size: cover;
   color: #f2f5f7;
   height: auto;
@@ -986,7 +986,7 @@ button,
 
 .about__container {
   padding: 0 0 30px 250px;
-  background-image: url("/img/about-year.webp");
+  background-image: url("../img/about-year.webp");
   background-repeat: no-repeat;
   background-size: 150px 320px;
 }
@@ -2204,7 +2204,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   .about__container {
-    background-image: url("/img/about-year@2x.webp");
+    background-image: url("../img/about-year@2x.webp");
   }
 
   .feedback {
