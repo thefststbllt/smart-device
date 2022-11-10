@@ -1,9 +1,10 @@
 .about {
   &__container {
-    padding: 0 0 30px 250px;
+    padding: 0 0 30px 255px;
     background-image: url("../img/about-year.webp");
     background-repeat: no-repeat;
     background-size: 150px 320px;
+    background-position: 5px 0;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/about-year@2x.webp");
@@ -43,12 +44,15 @@
 
     @include vp-767 {
       font-size: 14px;
-      line-height: 1.32em;
     }
   }
 
   &__container .button {
-    margin-top: 20px;
+    margin-top: 39px;
+
+    @include vp-1023 {
+      margin-top: 16px;
+    }
 
     @include vp-767 {
       margin-top: 14px;

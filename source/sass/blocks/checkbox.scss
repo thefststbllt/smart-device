@@ -7,6 +7,18 @@
   line-height: 1.1em;
   cursor: pointer;
 
+  &:hover {
+    color: #041427;
+
+    & span {
+      border-color: #041427;
+
+      &::before,
+      &::after {
+        background-color: #041427;
+      }
+    }
+  }
 
   & span {
     min-width: 14px;

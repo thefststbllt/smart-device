@@ -8,6 +8,10 @@
     row-gap: 30px;
     column-gap: 32px;
 
+    @include vp-1023 {
+      column-gap: 30px;
+    }
+
     @include vp-767 {
       display: flex;
       flex-direction: column;
@@ -16,20 +20,50 @@
   }
 
   &__list-item {
-    padding: 40px 44px 34px 41px;
+    padding: 40px 44px 35px 48px;
     border: 1px solid #ebebeb;
     position: relative;
     transition: 0.3s all;
     min-height: 300px;
 
     @include vp-1023 {
-      padding: 40px 30px 35px 45px;
+      padding: 40px 30px 31px 45px;
       min-height: 360px;
+
+      &:nth-child(3n) h3 {
+        margin: 9px 0 7px;
+      }
+
+      &:nth-child(4n) {
+        h3 {
+          margin: 6px 0 5px;
+        }
+
+        p {
+          width: 91%;
+        }
+      }
     }
 
     @include vp-767 {
-      padding: 30px 30px 38px;
+      padding: 30px 30px 35px;
       min-height: auto;
+
+      &:nth-child(3n) {
+        h3 {
+          margin: 14px 0 13px;
+        }
+      }
+
+      &:nth-child(4n) {
+        h3 {
+          margin: 14px 0;
+        }
+
+        p {
+          width: 95%;
+        }
+      }
 
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -54,21 +88,22 @@
     font-size: 24px;
     line-height: 1.4em;
     color: #00b2ff;
-    margin: 13px 0;
+    margin: 16px 0;
 
     @include vp-1023 {
-      margin: 6px 0 7px;
+      margin: 11px 0 9px;
     }
 
     @include vp-767 {
       font-size: 20px;
-      margin: 10px 0;
+      margin: 11px 0 10px;
     }
   }
 
   &__list-item p {
     color: #041827;
     margin: 0;
+    line-height: 1.35em;
 
     @include vp-1023 {
       line-height: 1.35em;

@@ -19,6 +19,7 @@ export const toggleText = () => {
       textParagraphs.forEach(function (p) {
         p.style.display = 'block';
       });
+      textParagraphs[textParagraphs.length - 1].style.marginTop = '10px';
       buttonAbout.textContent = 'Свернуть';
     } else if (mobileWidth.matches) {
       [textParagraphs[1], textParagraphs[2]].forEach(function (p) {

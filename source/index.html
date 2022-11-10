@@ -19,13 +19,10 @@
                 <source media="(max-width: 767px)" srcset="img/svg/logo-smart-device(mobile).svg">
                 <img src="img/svg/logo-smart-device.svg" alt="Логотип Smart Device">
               </picture>
-              <p>Smart&nbsp;Device
-                <span>умные технологии</span>
-              </p>
             </a>
             <ul class="main-navigation__list">
               <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="#">
+                <a class="main-navigation__list-link" href="#" tabindex="1">
                   <svg width="20" height="20">
                     <use xlink:href="img/sprite_auto.svg#icon-envelope"></use>
                   </svg>
@@ -33,7 +30,7 @@
                 </a>
               </li>
               <li class="main-navigation__list-item">
-                <a class="main-navigation__list-link" href="tel:+74950005252">
+                <a class="main-navigation__list-link" href="tel:+74950005252" tabindex="2">
                   <svg width="20" height="20">
                     <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
                   </svg>
@@ -41,14 +38,14 @@
                 </a>
               </li>
             </ul>
-            <a class="main-navigation__order-button button button--header" href="#" data-open-modal="feedback">Заказать звонок</a>
+            <a class="main-navigation__order-button button button--header" href="#" data-open-modal="feedback" tabindex="3">Заказать звонок</a>
           </div>
         </nav>
         <section class="main-header__main-info main-info">
           <div class="main-info__container container">
             <h1 class="main-info__title">Печатные платы</h1>
             <p class="main-info__description">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <button class="main-info__button button button--info">
+            <button class="main-info__button button button--info" tabindex="4">
               <span class="main-info__button-text main-info__button-text--acquire-consultation">Получить бесплатную консультацию</span>
               <span class="main-info__button-text main-info__button-text--chargeless-consultation">Бесплатная консультация</span>
             </button>
@@ -87,7 +84,7 @@
                 </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>
-                  По желанию клиента мы обеспечиваем полную конфиденциальность.
+                  По желанию клиента&nbsp;&nbsp;мы обеспечиваем полную конфиденциальность.
                 </p>
               </li>
               <li class="features__list-item">
@@ -96,7 +93,7 @@
                 </svg>
                 <h3>Персонализация стоимости</h3>
                 <p>
-                  Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+                  Мы&nbsp;&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
                 </p>
               </li>
             </ul>
@@ -116,12 +113,12 @@
               Производители светотехники России.</p>
             <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На
               данный
-              момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.<br>
+              момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.<br><br>
               Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий
               помогает
               экономить деньги и время наших клиентов
             </p>
-            <button class="button button--about" type="button">Подробнее</button>
+            <button class="button button--about" type="button" tabindex="5">Подробнее</button>
           </div>
         </section>
         <section class="main-content__products products">
@@ -130,18 +127,18 @@
             <p class="products__description">Smart Device <span class="products__spare-mobile">предлагает следующие товары и услуги</span></p>
             <ul class="products__list">
               <li class="products__item products__item--first">
-                <a class="products__link" href="#">
+                <a class="products__link" href="#" tabindex="6">
                   <h3 class="products__item-header">Производство печатных плат</h3>
                 </a>
               </li>
               <li class="products__item products__item--second">
-                <a class="products__link" href="#">
+                <a class="products__link" href="#" tabindex="7">
                   <h3 class="products__item-header">Монтаж печатных плат</h3>
                 </a>
               </li>
               <li class="products__item products__item--third">
-                <a class="products__link" href="#">
-                  <h3 class="products__item-header">Комплектующие для светотехники</h3>
+                <a class="products__link" href="#" tabindex="8">
+                  <h3 class="products__item-header">Комплектующие для&nbsp;светотехники</h3>
                 </a>
               </li>
             </ul>
@@ -152,12 +149,12 @@
             <h2 class="feedback__header">Остались вопросы? Задайте их нам!</h2>
             <p class="feedback__description">Мы проконсультируем Вас бесплатно</p>
             <div class="feedback__form-wrapper form">
-              <form>
+              <form action="https://echo.htmlacademy.ru/" method="post">
                 <label>
                   <input type="text" placeholder="Имя" required>
                 </label>
                 <label>
-                  <input type="number" placeholder="Телефон" required>
+                  <input type="text" placeholder="Телефон" name="user-phone" minlength="16" required>
                 </label>
                 <div class="feedback__textfield">
                   <label>
@@ -166,7 +163,7 @@
                 </div>
                 <button type="submit">Задать вопрос</button>
                 <label class="feedback__checkbox checkbox">
-                  <input type="checkbox" id="personal-data" checked>
+                  <input type="checkbox" id="personal-data" required checked tabindex="9">
                   <span></span>
                   Я согласен на обработку персональных данных
                 </label>
@@ -179,10 +176,7 @@
         <div class="main-footer__container container">
           <div class="main-footer__element main-footer__element--info">
             <a class="main-footer__logo logo">
-              <img src="img/svg/logo-smart-device.svg" alt="Логотип Smart Device" width="55" height="55">
-              <p>Smart&nbsp;Device
-                <span>умные технологии</span>
-              </p>
+              <img src="img/svg/logo-smart-device.svg" alt="Логотип Smart Device" width="215" height="55">
             </a>
             <ul class="main-footer__socials footer-socials">
               <li class="footer-socials__item">
@@ -215,28 +209,28 @@
             <div class="main-footer__title-wrapper">
               <h2>Разделы сайта</h2>
               <button class="main-footer__element-toggle">
-                <span class="visually-hidden">Закрыть</span>
+                <span>Разделы сайта</span>
               </button>
             </div>
             <ul class="main-footer__list">
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--about">
                 <a class="main-footer__link" href="#">О Компании</a>
               </li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--products">
                 <a class="main-footer__link" href="#">Продукты</a></li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--production">
                 <a class="main-footer__link" href="#">Производство печатных плат</a>
               </li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--mounting">
                 <a class="main-footer__link" href="#">Монтаж печатных плат</a>
               </li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--accessories">
                 <a class="main-footer__link" href="#">Комплектующие</a>
               </li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--delivery">
                 <a class="main-footer__link" href="#">Доставка</a>
               </li>
-              <li class="main-footer__item">
+              <li class="main-footer__item main-footer__item--contacts">
                 <a class="main-footer__link" href="#">Контакты</a>
               </li>
             </ul>
@@ -245,7 +239,7 @@
             <div class="main-footer__title-wrapper">
               <h2>Наш офис</h2>
               <button class="main-footer__element-toggle">
-                <span class="visually-hidden">Закрыть</span>
+                <span>Наш офис</span>
               </button>
             </div>
             <ul class="main-footer__list">
@@ -273,12 +267,12 @@
           <h3 class="modal__title">Закажите звонок</h3>
           <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <div class="modal__form-wrapper">
-            <form>
+            <form action="https://echo.htmlacademy.ru/" method="post">
               <label>
                 <input type="text" placeholder="Имя" id="form-name" required>
               </label>
               <label>
-                <input type="number" placeholder="Телефон" required>
+                <input type="text" placeholder="Телефон" name="user-phone" minlength="16" required>
               </label>
               <div class="modal__form-textfield">
                 <label>
@@ -287,7 +281,7 @@
               </div>
               <button type="submit">Отправить</button>
               <label class="modal__form-checkbox checkbox">
-                <input type="checkbox" checked>
+                <input type="checkbox" required checked>
                 <span></span>
                 Я согласен на обработку персональных данных
               </label>
