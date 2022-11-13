@@ -1,11 +1,13 @@
 .main-content {
+  &__main-info {
+    color: #f2f5f7;
+  }
+
   &__about {
     min-height: 320px;
-    margin-bottom: 90px;
 
     @include vp-1919 {
       min-height: auto;
-      margin-bottom: 80px;
     }
   }
 
@@ -13,7 +15,7 @@
     padding: 120px 0;
 
     @include vp-1023 {
-      padding: 80px 0 77px;
+      padding: 80px 0 76px;
     }
 
     @include vp-767 {
@@ -25,10 +27,6 @@
     @media (min-resolution: $retina-dppx) and (max-width: 1023px) {
       background-image: none;
       background-color: #00b2ff;
-    }
-
-    @media (max-width: 1600px) {
-      background-position: 45px 45px, 0 0;
     }
   }
 }

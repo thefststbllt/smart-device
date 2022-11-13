@@ -4,7 +4,7 @@
   padding: 49px 0 50px;
 
   @include vp-1023 {
-    padding: 50px 0 34px;
+    padding: 50px 0 25px;
   }
 
   @include vp-767 {
@@ -13,13 +13,17 @@
 
   &__container {
     display: flex;
-    width: 63.54%;
+    justify-content: space-between;
+    width: auto;
+    max-width: 1358px;
     margin: 0 auto;
     column-gap: 0;
+    row-gap: 30px;
 
     @include vp-1023 {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      row-gap: 0;
     }
 
     @include vp-767 {
@@ -30,6 +34,7 @@
 
   &__element {
     position: relative;
+    margin: 0 auto;
 
     &::after {
       @include vp-767 {
@@ -71,8 +76,8 @@
     }
 
     &--categories {
-      min-width: 375px;
-      margin: 0 0 0 13%;
+      min-width: 385px;
+      padding: 0 0 0 22px;
 
       @include vp-1023 {
         padding: 20px 0;
@@ -87,20 +92,19 @@
 
     &--categories ul {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 210px min-content;
       flex-direction: column;
-      column-gap: 30px;
+      column-gap: 10.5%;
 
       @include vp-1023 {
         display: flex;
         flex-wrap: nowrap;
-        width: auto;
+        width: 70%;
         height: auto;
       }
     }
 
     &--categories li {
-      max-width: 220px;
       line-height: 1.32em;
 
       &:last-child {
@@ -110,10 +114,10 @@
 
     &--location {
       max-width: 345px;
-      margin-left: auto;
+      min-width: 345px;
 
       @include vp-1023 {
-        padding: 20px 0;
+        padding: 20px 0 20px 24px;
         width: 320px;
       }
 
@@ -121,6 +125,7 @@
         max-width: none;
         width: 100%;
         padding: 0;
+        min-width: auto;
       }
     }
 
@@ -224,6 +229,9 @@
     margin-left: 10px;
 
     @include vp-1023 {
+      margin: 5px -5px 0 0;
+    }
+    @include vp-767 {
       margin: 4px -4px 0 0;
     }
   }
@@ -342,6 +350,7 @@
       & span {
         font-family: "Roboto Condensed";
         color: #f8fdff;
+        letter-spacing: 0.01em;
       }
     }
   }

@@ -1,16 +1,17 @@
 .logo {
-  display: flex;
-  color: #f2f5f7;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 1.2em;
+  width: 11.2vw;
+
+  @include vp-1023 {
+    width: auto;
+  }
 
   @include vp-767 {
     margin-top: 5px;
   }
 
   & picture {
-    width: max-content;
+    @include vp-767 {
+      width: max-content;
+    }
   }
 }

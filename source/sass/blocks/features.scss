@@ -1,4 +1,15 @@
 .features {
+  background-color: #ffffff;
+
+  &__container {
+    margin: auto;
+    max-width: 64vw;
+
+    @include vp-1023 {
+      max-width: max-content;
+    }
+  }
+
   &__list {
     list-style: none;
     padding: 0;

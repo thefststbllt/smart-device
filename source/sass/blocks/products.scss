@@ -5,11 +5,11 @@
     padding-top: 65px;
     padding-bottom: 140px;
     margin: 0 auto;
-    width: 63.54%;
+    width: 63.56vw;
 
     @include vp-1023 {
       padding-top: 55px;
-      padding-bottom: 76px;
+      padding-bottom: 75px;
     }
 
     @include vp-767 {
@@ -39,7 +39,7 @@
     font-family: "Roboto Condensed";
 
     @include vp-1023 {
-      margin: 0 0 38px;
+      margin: 0 0 40px;
     }
 
     @include vp-767 {
@@ -59,7 +59,7 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 85px;
+    gap: 4.45vw;
     padding: 0;
     margin: 0;
 
@@ -72,7 +72,7 @@
   &__item {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 33.9vw;
 
     &--first {
       background-image: url("../img/card-product-first.webp");
@@ -92,19 +92,19 @@
       &--third {
         background-image: url("../img/background-cards.webp");
         height: 250px;
-        background-size: 250% 380%;
+        background-size: 223%;
       }
 
       &--first {
-        background-position: bottom 13% left 34%;
+        background-position: bottom 14% left 30%;
       }
 
       &--second {
-        background-position: bottom -316px right -252px;
+        background-position: bottom 46% right 24%;
       }
 
       &--third {
-        background-position: bottom 40% left 21%;
+        background-position: bottom 40% left 18%;
       }
     }
 
@@ -112,7 +112,7 @@
       &--first,
       &--second,
       &--third {
-        background-size: 575% 410%;
+        background-size: 575%;
       }
 
       &--first {
@@ -132,11 +132,11 @@
   &__item-header {
     font-family: "Roboto Condensed";
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.04vw;
     line-height: 1.5em;
     margin: 0;
     color: #ffffff;
-    width: 60%;
+    width: 71%;
 
     &::before,
     &::after {
@@ -164,6 +164,7 @@
 
     @include vp-1023 {
       width: 25%;
+      font-size: 20px;
     }
 
     @include vp-767 {

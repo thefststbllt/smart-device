@@ -1,11 +1,13 @@
 .main-header {
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-main-block.webp") no-repeat;
-  background-size: cover;
   color: #f2f5f7;
   height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 
   @include vp-1023 {
     background-position: -123px 0;
+    position: static;
   }
 
   @include vp-767 {
@@ -13,8 +15,6 @@
   }
 
   &__navigation {
-    position: fixed;
-
     @include vp-1023 {
       position: static;
     }

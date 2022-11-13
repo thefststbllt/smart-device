@@ -1,0 +1,26 @@
+//.main-page__inner-wrapper {
+//  width: 100%;
+//  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top 3.25% left/100% url("../img/background-main-block.webp");
+//
+//  @include retina {
+//    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top 3.25% left/100% url("../img/background-main-block@2x.webp");
+//  }
+//}
+
+.main-page .main-page__inner-wrapper {
+  @include vp-1023 {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top left -16vw/182% url("../img/background-main-block.webp");
+
+    @include retina {
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top left -16vw/182% url("../img/background-main-block@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top left -72vw/382% url("../img/background-main-block.webp");
+
+    @include retina {
+      background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top left -72vw/382% url("../img/background-main-block@2x.webp");
+    }
+  }
+}

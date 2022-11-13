@@ -1,15 +1,32 @@
 .main-info {
+
+  width: 100%;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top -4.8vw left/100% url("../img/background-main-block.webp");
+
+  @include retina {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), no-repeat top -4.8vw left/100% url("../img/background-main-block@2x.webp");
+  }
+
+  .main-content & {
+    @include vp-1023 {
+      background: none;
+
+      @include retina {
+        background: none;
+      }
+    }
+  }
+
   &__container {
-    padding-top: 305px;
-    padding-left: 130px;
-    padding-bottom: 280px;
+    padding: 11.35vw 0 14.65vw 6.75vw;
+    margin: 0 18vw;
 
     @include vp-1023 {
-      padding: 79px 50px 205px;
+      padding: 80px 50px 205px;
     }
 
     @include vp-767 {
-      padding-top: 75px;
+      padding-top: 78px;
       padding-bottom: 190px;
       display: flex;
       flex-direction: column;
@@ -19,7 +36,7 @@
   &__title {
     font-family: "Roboto Condensed";
     font-weight: 700;
-    font-size: 80px;
+    font-size: 4.17vw;
     line-height: 1.2em;
     letter-spacing: 0.07em;
     text-transform: uppercase;
@@ -32,19 +49,19 @@
 
     @include vp-767 {
       font-size: 36px;
-      line-height: 42px;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
   }
 
   &__description {
-    font-size: 22px;
+    font-size: 1.14vw;
     line-height: 155%;
     width: 60%;
-    margin: 30px auto 46px 0;
+    margin: 2.8% auto 4.2% 0;
     text-transform: lowercase;
 
     @include vp-1023 {
+      font-size: 22px;
       width: auto;
       margin: 0 0 57px;
       line-height: 153%;
@@ -68,6 +85,15 @@
   }
 
   &__button-text {
+    &--acquire-consultation {
+      font-size: 0.94vw;
+
+      @include vp-1023 {
+        font-size: 18px;
+        letter-spacing: 0.05em;
+      }
+    }
+
     &--chargeless-consultation {
       display: none;
     }
